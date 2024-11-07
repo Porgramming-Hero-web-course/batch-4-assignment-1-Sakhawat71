@@ -9,13 +9,14 @@
             public year: number
         ) { }
 
-        getCarAge(){
-            const currentYear = new Date().getFullYear;
+        getCarAge(): number {
+            const currentYear = new Date().getFullYear();
+            return currentYear - this.year;
         }
 
     }
 
-    const car = new Car('s','y',4)
-    console.log(car.getCarAge());
+    const car = new Car("Honda", "Civic", 2018);
+    // console.log(car.getCarAge());
 
 }
