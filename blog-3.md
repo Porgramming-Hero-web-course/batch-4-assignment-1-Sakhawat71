@@ -16,3 +16,20 @@ Type guards are runtime checks that let you confirm the type of a value within a
 4. Discriminated Unions
 
 
+### Why Are Type Guards Important?
+
+- **Safety and Predictability**: Type guards prevent runtime errors by checking types.
+
+- **Better Code Suggestions**: TypeScript's editor support can offer better suggestions when you use type guards.
+
+- **Improved Readability**: Explicit checks make code easier to understand.
+
+## Types of Type Guards with Example
+
+There are several ways to implement Type Guards in TypeScript. Let's explore them one by one with examples.
+
+
+- `typeof` Type Guard
+
+
+
