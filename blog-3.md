@@ -18,18 +18,35 @@ Type guards are runtime checks that let you confirm the type of a value within a
 
 ### Why Are Type Guards Important?
 
-- **Safety and Predictability**: Type guards prevent runtime errors by checking types.
+- **Safety and Predictability** : Type guards prevent runtime errors by checking types.
 
-- **Better Code Suggestions**: TypeScript's editor support can offer better suggestions when you use type guards.
+- **Better Code Suggestions** : TypeScript's editor support can offer better suggestions when you use type guards.
 
-- **Improved Readability**: Explicit checks make code easier to understand.
+- **Improved Readability** : Explicit checks make code easier to understand.
 
 ## Types of Type Guards with Example
 
 There are several ways to implement Type Guards in TypeScript. Let's explore them one by one with examples.
 
 
-- `typeof` Type Guard
+- `typeof` Type Guard : 
 
+The `typeof` operator is a common way to perform type checks for primitive data types like `string`, `number`, and `boolean`.
+
+```typescript 
+
+const processValue = (value: number | string) => {
+  if (typeof value === 'string') {
+    console.log('String length:', value.length);
+  } else {
+    console.log('Doubled number:', value * 2);
+  }
+};
+
+processValue(5); // Output: Doubled number: 10
+processValue('TypeScript'); // Output: String length: 10
+
+
+```
 
 
