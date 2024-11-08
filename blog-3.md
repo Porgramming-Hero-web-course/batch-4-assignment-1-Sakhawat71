@@ -31,7 +31,7 @@ Type guards are runtime checks that let you confirm the type of a value within a
 There are several ways to implement Type Guards in TypeScript. Let's explore them one by one with examples.
 
 
-#### -`typeof` Type Guard : 
+#### `typeof` Type Guard : 
 
 The `typeof` operator is a common way to perform type checks for primitive data types like `string`, `number`, and `boolean`.
 
@@ -50,5 +50,36 @@ processValue('TypeScript'); // Output: String length: 10
 
 
 ```
+
+
+#### `instanceof` Type Guard
+
+You can use `instanceof` to check if an object is an instance of a particular class or constructor function.
+
+```typescript
+
+class Car {
+  drive = () => console.log('Driving...');
+}
+
+class Bike {
+  pedal = () => console.log('Pedaling...');
+}
+
+const startVehicle = (vehicle: Car | Bike) => {
+  if (vehicle instanceof Car) {
+    vehicle.drive();
+  } else {
+    vehicle.pedal();
+  }
+};
+
+const myCar = new Car();
+const myBike = new Bike();
+
+startVehicle(myCar); // Output: Driving...
+startVehicle(myBike); // Output: Pedaling...
+
+
 
 
