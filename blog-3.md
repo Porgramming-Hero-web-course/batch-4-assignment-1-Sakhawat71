@@ -113,6 +113,7 @@ function move(animal: Fish | Bird) {
 - **`any` or `unknown` Types** : To safely handle values without explicit types.
 - **Complex Objects** : When working with different interfaces or classes.
 
+---
 
 **Conclusion** : Type guards are essential for making TypeScript code robust, safe, and predictable. By leveraging built-in and custom type guards, you can write cleaner and more maintainable code, especially when dealing with complex data types and dynamic scenarios.
 
