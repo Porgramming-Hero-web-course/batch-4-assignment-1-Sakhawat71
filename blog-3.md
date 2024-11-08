@@ -108,5 +108,8 @@ function move(animal: Fish | Bird) {
 
 ```
 
-
+### When to Use Type Guards
+- **Union Types**: When a variable can be more than one type.
+- **any or unknown Types**: To safely handle values without explicit types.
+- **Complex Objects**: When working with different interfaces or classes.
 
