@@ -115,5 +115,6 @@ function move(animal: Fish | Bird) {
 
 ---
 
-**Conclusion** : Type guards are essential for making TypeScript code robust, safe, and predictable. By leveraging built-in and custom type guards, you can write cleaner and more maintainable code, especially when dealing with complex data types and dynamic scenarios.
+### **Conclusion** 
+Type guards are essential for making TypeScript code robust, safe, and predictable. By leveraging built-in and custom type guards, you can write cleaner and more maintainable code, especially when dealing with complex data types and dynamic scenarios.
 
