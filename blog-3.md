@@ -4,7 +4,7 @@
 
 **Introduction** : TypeScript's static typing helps catch errors early in the development process. However, when working with dynamic data or union types, type checking becomes challenging. This is where type guards come in. Type guards allow you to narrow down the type of a variable, enabling you to perform operations safely.
 
-#### What Are Type Guards?
+### What Are Type Guards?
 
 Type guards are runtime checks that let you confirm the type of a value within a conditional block. With type guards, you can handle union types, work with `any` or `unknown` types safely, and create robust applications.
 
@@ -24,12 +24,14 @@ Type guards are runtime checks that let you confirm the type of a value within a
 
 - **Improved Readability** : Explicit checks make code easier to understand.
 
+---
+
 ## Types of Type Guards with Example
 
 There are several ways to implement Type Guards in TypeScript. Let's explore them one by one with examples.
 
 
-- `typeof` Type Guard : 
+#### -`typeof` Type Guard : 
 
 The `typeof` operator is a common way to perform type checks for primitive data types like `string`, `number`, and `boolean`.
 
