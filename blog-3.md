@@ -48,11 +48,10 @@ const processValue = (value: number | string) => {
 processValue(5); // Output: Doubled number: 10
 processValue('TypeScript'); // Output: String length: 10
 
-
 ```
 
 
-#### `instanceof` Type Guard
+#### `instanceof` Type Guard :
 
 You can use `instanceof` to check if an object is an instance of a particular class or constructor function.
 
@@ -80,6 +79,34 @@ const myBike = new Bike();
 startVehicle(myCar); // Output: Driving...
 startVehicle(myBike); // Output: Pedaling...
 
+```
+
+#### User-Defined Type Guard :
+
+```typescript 
+
+interface Fish {
+  swim(): void;
+}
+
+interface Bird {
+  fly(): void;
+}
+
+function isFish(animal: Fish | Bird): animal is Fish {
+  return (animal as Fish).swim !== undefined;
+}
+
+function move(animal: Fish | Bird) {
+  if (isFish(animal)) {
+    animal.swim();
+  } else {
+    animal.fly();
+  }
+}
+
+
+```
 
 
 
